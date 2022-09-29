@@ -11,14 +11,14 @@ const CreateTask = () => {
   }
 
   return (
+   <div>
     <p className='d-flex flex-column align-items-center pt-5'>
       Create Task Component
     </p>
-    <div>
       <Form className="create-task">
 	  <Form.Field>
 	    <label>Task Name</label>
-	    <input placeholder='Task Name' onChange={(e) => setNewTask(e.target.value)}/>
+	    <input placeholder='Task Name' onChange={(e) => setTask(e.target.value)}/>
 	  </Form.Field>
 	  <Button onClick={makeTask} type='submit'>CREATE</Button>
       </Form>

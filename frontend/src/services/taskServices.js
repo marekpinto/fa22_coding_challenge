@@ -16,5 +16,5 @@ export function updateTask(task, newTask) {
 
 /* CREATE 'DELETE' FUNCTIONS */
 export function deleteTask(task) {
-  return axios.delete(apiUrl + "/delete/ + task);
+  return axios.delete(apiUrl + "/delete/" + task);
 }

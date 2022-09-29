@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Button, Form } from "semantic-ui-react"
-import { updateTask, deleteTask } from ../services/taskServices.js;
+import { updateTask, deleteTask } from "../services/taskServices.js";
 
 const Task = ({ task }) => {
   /* CREATE UPDATE OPERATION */
