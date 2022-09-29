@@ -10,5 +10,11 @@ export function addTask(task) {
 }
 
 /* CREATE 'PUT' FUNCTIONS */
+export function updateTask(task, newTask) {
+  return axios.put(apiUrl + "/update/" + task, { newTask});
+}
 
 /* CREATE 'DELETE' FUNCTIONS */
+export function deleteTask(task) {
+  return axios.delete(apiUrl + "/delete/ + task);
+}
